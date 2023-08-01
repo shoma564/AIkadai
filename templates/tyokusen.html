@@ -1,0 +1,28 @@
+{% extends "head.html" %}
+
+{% block content %}
+<div class="empty-line">
+<title> 線形回帰 </title>    
+<br>
+<h1> 最小二乗法による回帰直線<h1>
+<br>
+<div class="d-grid gap-2">
+  <button class="btn btn-lg btn-primary" type="button" onclick="location.href='/tyokusen'">データ更新</button>
+</div>
+<br>
+<h2> 生成されたグラフ<h2>
+<br>
+<div style="text-align: center;">
+<img src="static/figure01.jpg">
+</div>
+
+<h2> 乱数によって生成された値 </h2>
+<br>
+<p>x: {{xlist}} </p>
+<p>y: {{ylist}} </p>
+
+<br><br><br>
+
+
+<div>
+{% endblock %}

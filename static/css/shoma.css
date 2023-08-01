@@ -1,0 +1,52 @@
+.empty-line {
+margin: 50px 0px 0px 50px;
+}
+
+body {
+    background-image: linear-gradient(90deg, #33b7e2, #5e62b0, #dc307c);
+}
+
+.setsumei {
+margin: 0px 0px 0px 400px;
+}
+
+.syousai {
+margin: 10px
+}
+
+.eventcard_group {
+display: flex
+}
+
+.eventcard1 {
+margin: 10px
+}
+
+.eventcard2 {
+margin: 10px
+}
+
+.eventcard3 {
+margin: 10px
+}
+
+.eventcard4 {
+margin: 10px
+}
+
+
+.kei1 {
+margin: 100px;
+}
+
+.kei2 {
+margin: 100px;
+}
+
+.kei3 {
+margin: 100px;
+}
+
+.kei4 {
+margin: 100px;
+}

@@ -1,0 +1,43 @@
+{% extends "head.html" %}
+
+{% block content %}
+<div class="empty-line">
+<title> 多層パーセプトロン </title>    
+<br>
+<h1> 多層パーセプトロン<h1>
+<br>
+<div class="d-grid gap-2">
+  <button class="btn btn-lg btn-primary" type="button" onclick="location.href='/kadai3'">データ更新</button>
+</div>
+
+<br><br>
+<h2> 実際の出力と予測出力 <h2>
+  <br>
+  <div style="text-align: center;">
+  <img src="static/figure04.jpg">
+  </div>
+
+<br>
+<h2> 学習結果 <h2>
+<br>
+<div style="text-align: center;">
+<img src="static/figure03.jpg">
+</div>
+
+
+<br><br>
+
+
+<div class="card border-primary mb-3" style="max-width: 110rem;">
+  <div class="card-header">多層パーセプトロン</div>
+  <div class="card-body">
+    <h4 class="card-title">プログラムの挙動</h4>
+    <p class="card-text">このプログラムでは、2つの入力を持つ4つのデータ点を使用して、3層の多層パーセプトロンを作成しています。最初の層は3つのニューロンを持ち、2つの入力を受け取ります。3つのニューロンはそれぞれ、入力の和を計算し、シグモイド関数を適用して出力します。次の層は1つのニューロンを持ち、最初の層の出力を受け取ります。このニューロンは、入力の和を計算し、シグモイド関数を適用して出力します。最後に、2つの入力と1つの出力を持つ4つのデータ点を使用して、ニューラルネットワークをトレーニングし、テストします。<br>
+      このプログラムでは、エポックごとの平均二乗誤差をプロットしています。エポック数が増えるにつれて、平均二乗誤差が減少することがわかります。これは、ニューラルネットワークがXORゲートを正しく学習していることを示しています。
+      </p>
+  </div>
+</div>
+
+
+<div>
+{% endblock %}

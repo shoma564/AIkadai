@@ -1,0 +1,38 @@
+{% extends "head.html" %}
+
+{% block content %}
+<div class="empty-line">
+<title> TD学習法による最短経路 </title>    
+<br>
+<h1> 迷路の生成とTD学習法による最短経路探索<h1>
+<br>
+<div class="d-grid gap-2">
+  <button class="btn btn-lg btn-primary" type="button" onclick="location.href='/meiro'">データ更新</button>
+</div>
+<br>
+
+<h2>元の迷路</h2>
+    <table>
+        {% for row in maze_data %}
+        <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+<br><br>
+    <h2>学習によって得られた状態価値関数</h2>
+    <table width="200" border="1">
+        {% for row in state_value_function %}
+        <tr>
+            {% for value in row %}
+            <td>{{ row }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+{% endblock %}

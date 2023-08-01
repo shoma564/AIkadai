@@ -1,0 +1,30 @@
+{% extends "head.html" %}
+
+{% block content %}
+<div class="empty-line">
+<title> ベイズ推定 </title>    
+<br>
+<h1> 最尤推定とベイズ推定の比較<h1>
+<br>
+<div class="d-grid gap-2">
+  <button class="btn btn-lg btn-primary" type="button" onclick="location.href='/saiyu'">データ更新</button>
+</div>
+<br>
+<h2> サンプル数20の場合<h2>
+<br>
+  <br>
+  <div style="text-align: center;">
+  <img src="static/beizu1.png" width="50%" height="50%">
+  </div>
+
+
+  <br><br>
+  <h2> サンプル数300<h2>
+    <br>
+    <div style="text-align: center;">
+    <img src="static/beizu2.png" width="50%" height="50%">
+    </div>
+
+
+<div>
+{% endblock %}
